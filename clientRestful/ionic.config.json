@@ -1,0 +1,7 @@
+{
+  "name": "clientRestful",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
