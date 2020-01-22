@@ -8,7 +8,7 @@ Se requiere un servidor local Mysql con una base de datos denominada api. Existe
 
 (Véase api.sql)
 
-El backend es un proyecto Netbeans. Requiere la actualización del archivo application.properties con las configuración de la conexión a la base de datos. Para ejecutar la aplicación y desplegar el servicio solo se requiere la ejecución del mismo. Automáticamente, se el endpoint http://localhost:8080/item estará disponible. Las acciones son:
+El backend (apiRestfulService) es un proyecto Netbeans. Requiere la actualización del archivo application.properties con las configuración de la conexión a la base de datos. Para ejecutar la aplicación y desplegar el servicio solo se requiere la ejecución del mismo. Automáticamente, se el endpoint http://localhost:8080/item estará disponible. Las acciones son:
 1) Petición GET a http://localhost:8080/item para mostrar todos los items
 2) Petición GET a http://localhost:8080/item/{id} para mostrar el item con el id indicado en la URL
 4) Petición POST a http://localhost:8080/item con body en JSON para acrear un item
@@ -28,7 +28,7 @@ El backend es un proyecto Netbeans. Requiere la actualización del archivo appli
 5) Petición DELETE a http://localhost:8080/item/{id} para eliminar el item con id indicado en la URL
 6) Petición GET a http://localhost:8080/item/search/{title} para listar los items que en su título contenga title
 
-El frontend es un proyecto Ionic (se recomienda abrirlo en Visual Studio Code). Para instalar las dependencias y ejecutarlo se requiere los siguientes comandos:
+El frontend (clientRestfulService) es un proyecto Ionic (se recomienda abrirlo en Visual Studio Code). Para instalar las dependencias y ejecutarlo se requiere los siguientes comandos:
 1) npm install
 2) ionic cordova platform add browser
 3) (ejecutarlo) ionic cordova run browser --livereload
