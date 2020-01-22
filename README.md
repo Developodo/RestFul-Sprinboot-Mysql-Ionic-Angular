@@ -6,6 +6,8 @@ Se requiere un servidor local Mysql con una base de datos denominada api. Existe
 2) title: varchar(128)
 3) description: varchar(256)
 
+(Véase api.sql)
+
 El backend es un proyecto Netbeans. Requiere la actualización del archivo application.properties con las configuración de la conexión a la base de datos. Para ejecutar la aplicación y desplegar el servicio solo se requiere la ejecución del mismo. Automáticamente, se el endpoint http://localhost:8080/item estará disponible. Las acciones son:
 1) Petición GET a http://localhost:8080/item para mostrar todos los items
 2) Petición GET a http://localhost:8080/item/{id} para mostrar el item con el id indicado en la URL
